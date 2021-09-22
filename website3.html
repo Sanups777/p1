@@ -1,0 +1,323 @@
+<!doctype html>
+	<html>
+		<head>
+		<style>
+			.container 
+			{
+				position: relative;
+				text-align: center;
+				color: white;
+			}
+			.bottom-left 
+			{
+				position: absolute;
+				bottom: 8px;
+				left: 16px;
+			}
+			.top-left 
+			{
+				position: absolute;
+				top: 8px;
+				left: 16px;
+			}
+			.top-right 
+			{
+				position: absolute;
+				top: 8px;
+				right: 16px;
+			}
+
+			.bottom-right 
+			{
+				position: absolute;
+				bottom: 8px;
+				right: 16px;
+			}
+
+			.centered 
+			{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			table,tr,td
+			{
+				border:solid 1px blue;
+			}
+			
+		</style>
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="style1.css">
+			<script
+			  src="https://code.jquery.com/jquery-1.12.4.js"
+			  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+			  crossorigin="anonymous">
+			  
+				{
+					$(window).scroll(function()
+					{
+						if($(this).scrollTop() > 100)
+						{
+							$('#bt').fadeIn();
+						}
+						else
+						{
+							$('#bt').fadeOut();
+						}
+					});
+			   
+					$('#bt').click(function()
+					{
+						$("html, body").animate({ scrollTop: 0 }, 600);
+						return false;
+					});	
+				}
+			</script>
+		</head>
+		<body>
+
+			<div class="outer">
+				<div class="slider">
+					<div class="header">
+						<div class="logo">
+							<i class="fa fa-align-center" aria-hidden="true"></i>
+							<b><span style="color:white;font-family: 'Oswald', sans-serif;">HB</span></b>
+						</div>
+						<div class="menu">
+							<div class="menu1" >
+								<a href="website3.html" style="color:#ffc80a;"><b><p class="menu2">HOME</p></b></a>
+							</div>
+							
+							<div class="menu1">
+								<a href="#a"><b><p class="menu2">ABOUT</p></b></a>
+							</div>
+							
+							<div class="menu1">
+								<a href="#b"><p class="menu2">MENU</p></b></a>
+							</div>
+							
+							<div class="menu1">
+								<b><p class="menu2 s"  style="margin-left: -13px;">DROPDOWN</p></b>
+								<i class="fa fa-angle-down" aria-hidden="true"></i></b>
+							</div>
+							
+							<div class="menu1">
+								<a href="#c"><b><p class="menu2">REVIEWS</p></b></a>
+							</div>
+
+							<div class="menu1">
+								<a href="#d"><b><p class="menu2">CONTACT</p></b></a>
+							</div>
+							
+							
+						
+						</div>
+						<div class="centered center">
+							<div style="border:#0000;">
+								<center class="center1"><p>Burger Special</p></center>
+							</div>
+							<div class="center2"> 
+								<input class="btn" type="button" value="Read More" />
+							</div>
+							
+						</div>
+						
+						<div class="icons1 bottom-left ">
+							<i style="margin-left:100px"class="fa fa-facebook icons" aria-hidden="true"></i>
+		
+							<i class="fa fa-twitter icons " aria-hidden="true"></i>
+
+							<i class="fa fa-google-plus icons" aria-hidden="true"></i>
+
+							<i class="fa fa-linkedin icons" aria-hidden="true"></i>
+							
+							<i class="fa fa-dribbble icons" aria-hidden="true"></i>
+
+						</div>
+						
+						<div class="bottom-right ">
+							<div class="contact">	
+								<span><b><h5><i style="color:white" class="fa fa-phone" aria-hidden="true"></i>&nbsp; Order Now : 123456789</h5></b></span>
+							 </div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="a"class="body">
+					<div class="body1">
+						<div class="body12 body121">
+							<h4>TRIPLE HAMBURGER WITH CHEESE MEAL</h4>
+						</div>
+						<div class="body13 body131">
+							<p>Integer pulvinar leo id viverra feugiat. <b>Pellentesque libero justo <br/>, semper at tempus vel, ultrices in sed ligula. Nulla uter <br/> sollicitudin velit.</b> Sed porttitor orci vel fermentum elit maximus <br/>. Curabitur ut turpis massa in condimentum libero. Pellentesque <br/> maximus Pellentesque libero justo Nulla uter sollicitudin velit. Sed <br/> porttitor orci vel ferm semper at <br/> vel, ultrices in ligula semper at vel.Curabitur ut turpis massa in condimentum libero.</p>
+						</div>
+					</div>
+					<div class="body2">
+						<img src="2/food2.png" style="    max-width: 100%; height: auto;">
+					</div>
+				</div>
+				<div id="b" style="border-color:red; float:left;width:100%;height:auto;padding-bottom:50px;padding-top:50px;background:red;">
+
+					<div style="text-align:center;margin:auto;width:80%;border:#0000;">
+						<h1>what kind of foods we serve you</h1>
+					</div>
+					
+					<div style="width:80%;margin:auto;padding-bottom:20px;padding-top:20px;height: 100px;border:#0000;">
+						
+						<div class="body3">
+							<img src="2/food3.jpg" class="img2">
+						</div>
+						<div class="body3">
+							<img src="2/food4.jpg" class="img2">
+						</div>
+						<div class="body3">
+							<img src="2/food5.jpg" class="img2">
+						</div>
+						<div class="body3">
+							<img src="2/food6.jpg" class="img2">
+						</div>	
+						
+					</div>		
+					
+				</div>
+				<div id="c">
+					<div>
+						<h2> Bigger & Bolder </h2>
+					</div>
+					<div>
+						<div>	
+							<div>
+								<span><i class="fa fa-align-center" aria-hidden="true"></i></span> <input style="background:red"type="button" value="Burgers" >
+							</div>
+							<div>
+								<span><i class="fa fa-bolt" aria-hidden="true"></i></span> <input type="button" value="fries" >
+							</div>
+							<div>
+								<span><i class="fa fa-bitbucket" aria-hidden="true"></span></i><input  type="button" value="drinks" >
+							</div>
+							
+						</div>
+						
+					</div>
+				
+					
+				</div>
+				<div class="body4">	
+					<div class="body41">
+						<span class="body411">Free Delivery With</span>	<h3 class="body412">Burger Of the Day</h3>
+					</div>
+					<div class="body42">
+						<h4 class="body421"><span><i class="fa fa-usd" aria-hidden="true"></i></span>99</h4>
+
+							<p class="body431">
+								<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>Integer sit amet mattis quam<br/>
+								<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>Praesent ullamcorper dui turpis<br/>
+								<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>Integer sit amet mattis quam
+							</p>						
+					</div>
+					<div class="body44">
+						<a class="body441" href="#d">read more</a>
+					</div>
+				</div>		
+				<div class="gallery">
+					<div class="gallery1">
+						<h3 class="gallery12" style="padding-top:50px;padding-bottom:50px;">OUR GALLERY</h3>
+					</div>
+					<div class="gallery2">
+						
+						<img src="2/foodg1.jpg" class="gallery21">
+						<img src="2/foodg2.jpg" class="gallery21">
+						<img src="2/foodg3.jpg" class="gallery21">
+						<img src="2/foodg4.jpg" class="gallery21">
+					
+					
+					</div>
+				</div>
+				<div class="testimoniaL">
+					<div class="testimoniaL1">
+						<div class="testimoniaL11">
+							<div class="testimoniaL111">
+								<h3 class="testimoniaL1112">JENIFER BURNS</h3>
+							</div>
+							<div class="testimoniaL112">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							</div>
+							<div class="testimoniaL113">
+								 <p><span><i class="fa fa-quote-left" aria-hidden="true"></i></span>Lorem Ipsum has been the industry's standard since the 1500s. Praesent <br/>ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor <br/> mollisar lorem, at molestie arcu pulvinar ut.<span><i class="fa fa-quote-right" aria-hidden="true"></i></span> </p>
+							</div>
+						</div>	
+						
+					</div>
+				</div>
+				<div class="contact" id="d">
+					<div  class="contact1">
+						<h3>CONTACT US</h3>
+					</div>
+					<div class="contact2">
+						<table>
+							<tr >
+								<td class="contact21"><b class="contact211 ">name*</b><br/>
+								<input type="text" class="contact212"></td>
+							
+							
+								<td class="contact21"><b class="contact211 ">email*</b><br/>
+								<input type="text" class="contact212"></td>
+						
+							
+								<td class="contact21"><b class="contact211 ">submit*</b>
+								<a class="contact221 " href="website3.html">submit</a></td>
+								
+							</tr>
+						</table>
+
+					</div>
+					<div style=" width: 80%; margin: auto;  margin-top: 50px;  margin-bottom: 50px;">
+					</div>
+					
+					<div class="contact3">
+						<div class="contact31">
+							<table>
+								<tr>
+									<td class="contact32">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</td>
+									<td class="contact33">
+										<h6 class="contact312">location</h6>	
+										<p class="contact313">The company name <br/>New York City.</p>
+									</td>									
+									<td class="contact32">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</td>
+									<td class="contact33">
+										<h6 class="contact312">EMAIL</h6>	
+										<p class="contact313">mail@example.com  <br/>mail2@example.com</p>
+									</td>									
+									<td class="contact32">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</td>
+									<td class="contact33">
+										<h6 class="contact312">PHONE NUMBER</h6>	
+										<p class="contact313">+ 1234567890 <br/>+ 0987654321</p>
+									</td>									
+									
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+				</div>
+				<div>
+					<a href="#">
+						<div class="back-to-top" id="bt">
+						<i class="fa fa-angle-up" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</body>
+	</html>
